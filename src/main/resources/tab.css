@@ -1,0 +1,22 @@
+* {
+    -fx-font-family: "Times New Roman";
+    -fx-font-size: 20px;
+}
+
+.tab {
+    -fx-focus-color: transparent;
+}
+
+.tab:selected {
+    -fx-background-color: blue;
+    -fx-text-background-color: white;
+
+}
+
+.tab:selected.label {
+    -fx-prompt-text-fill: white;
+}
+
+
+
+
