@@ -36,3 +36,4 @@ build/
 
 ### Mac OS ###
 .DS_Store
+/out/artifacts/BirthdayGreetings_jar/BirthdayGreetings.jar

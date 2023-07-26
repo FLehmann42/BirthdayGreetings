@@ -11,7 +11,7 @@ import java.io.IOException;
 /**
  * JavaFX App
  */
-public class App extends Application {
+public class Main extends Application {
 
     private static Scene scene;
 
@@ -30,7 +30,7 @@ public class App extends Application {
 
     private static Parent loadFXML(String fxml, DataModel model) throws IOException {
 
-        FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource(fxml + ".fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource(fxml + ".fxml"));
         fxmlLoader.setControllerFactory(type -> {
             if(type.equals(PrimaryController.class)) return new PrimaryController();
             if(type.equals(InputController.class)) return new InputController(model);
